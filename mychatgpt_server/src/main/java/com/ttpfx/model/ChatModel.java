@@ -182,7 +182,7 @@ public class ChatModel {
 
         // 设置请求参数
         chatGptRequestParameter.addMessages(new ChatMessage("user·", question));
-·
+
         String valueAsString = null;
         try {
             valueAsString = objectMapper.writeValueAsString(chatGptRequestParameter);
