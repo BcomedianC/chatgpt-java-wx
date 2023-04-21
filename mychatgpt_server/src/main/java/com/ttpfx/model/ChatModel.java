@@ -34,7 +34,7 @@ public class ChatModel {
     /**
      * 这里分别代表密钥，请求的地址，编码
      */
-    private String apiKey="自己的apiKey";
+    private String apiKey="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";
     private String url="https://api.openai.com/v1/chat/completions";
     private Charset charset = StandardCharsets.UTF_8;
 
@@ -181,8 +181,8 @@ public class ChatModel {
         // 创建一个ObjectMapper，用于解析和创建json
 
         // 设置请求参数
-        chatGptRequestParameter.addMessages(new ChatMessage("user", question));
-
+        chatGptRequestParameter.addMessages(new ChatMessage("user·", question));
+·
         String valueAsString = null;
         try {
             valueAsString = objectMapper.writeValueAsString(chatGptRequestParameter);
